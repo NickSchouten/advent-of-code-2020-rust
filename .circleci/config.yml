@@ -4,6 +4,6 @@ jobs:
   test:
     docker:
       - image: cimg/rust:1.48.0
-      steps:
-        - checkout
-        - run: cargo test --all
+    steps:
+      - checkout
+      - run: cargo test --all
