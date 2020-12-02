@@ -1,0 +1,11 @@
+version: 2
+
+jobs:
+  test:
+    docker:
+      - image: rust:1
+      steps:
+        - checkout
+        - run:
+          name: Run all tests
+          command: cargo test --all
